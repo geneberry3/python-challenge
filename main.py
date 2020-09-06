@@ -8,14 +8,18 @@ import csv
 budget_csv = os.path.join('..', 'Resources', 'budget_data.csv')
 
 with open(budget_csv) as csvfile:
-    csvreader = csv.reader(csvfile, delimiter, ",")
+    csv_reader = csv.reader(csvfile, delimiter=",")
 
 monthly = budget_csv[0]
 profits = budget_csv[1]
 
+for row in csv_reader:
+    monthly += 1
 
+    month
 
-# print(f'monthly)
+print(f'{monthly}')
+
 # # Reading using CSV module
 # with open(csvpath) as csvfile:
 
